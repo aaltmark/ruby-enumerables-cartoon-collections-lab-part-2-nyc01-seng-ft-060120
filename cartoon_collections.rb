@@ -6,7 +6,7 @@ end
 
 def summon_captain_planet(planeteer_calls)
   planeteer_calls.map do |element|
-    element.capitalize!
+    element.capitalize.insert(!)
   end
 end
 
@@ -18,7 +18,6 @@ end
 
 def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
-  valid_calls.join(" ",)
   planeteer_calls.any? do |element|
     element.include?(valid_calls)
   end
